@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+html { background-color: rgb(41, 44, 49); }
+
+.btn-image {
+    background-image: 'assets/logo2.jpg';
+    background-size: contain; 
+}
+
+.mat-loginColor {
+    background-color: rgb(65, 87, 103);
+    color: rgb(52, 140, 99);
+}

@@ -1,0 +1,82 @@
+<!-- app/app.component.html -->
+
+  <!-- Logo -->
+<p style="text-align:center; margin-top: 12em;"><img src='assets/logo.jpg' ng-click = goHome alt="Logo"></p>
+  <!-- Description -->
+  <div class="description">
+    <p style="text-align:center; margin-top: 0.4em;"><span>A picture is worth a thousand words...</span></p>
+      <div class="spacer"></div>
+  
+  </div>
+
+  <!-- Style -->
+<style>
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Roboto;
+  }
+
+  .description{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+  }
+
+  .login {
+    position: absolute;
+    top: 0;
+    left: 1;
+    right: 0;
+    font-size: 30px;
+
+    font-family: Roboto;
+  }
+
+  .home {
+    position: absolute;
+    top: 56;
+    left: 2;
+    right: 0;
+  }
+  </style>
+
+  <!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <p style="margin-left: 1em;"></p>
+  
+    <!-- Home Button -->
+ <a mat-button [routerLink]="['home']" routerLinkActive="active"><img width="90" alt="PhotoBomb Logo" src="assets/logo_bar.jpg"/></a>
+
+  <p style="margin-left: 0.4em;"><span><h1><span class="light">PHOTO</span>BOMB</h1>
+   
+     <!-- Login -->
+<div class="login">
+  <p style="margin-top: 1em; margin-right: 15em;"></p>
+  <button mat-raised-button>
+    <a md-button
+    style="text-decoration: none"
+  [routerLink]="['login']"
+  routerLinkActive="active">LOGIN</a></button>
+  </div>
+
+
+
+
+
+
+
+  
+
+ 
+
